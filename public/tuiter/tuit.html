@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>New Tuit</title>
+    <link rel="stylesheet" href="tuiter.css">
 </head>
 <body>
 <a href="navigation.html">Back</a>
 <h1>Tuiter</h1>
 <h2>Tuit</h2>
 <img src="icon.png" width="48" height="48"/>
-<div style="display: flex; flex-direction: column;width: 200px">
-    <textarea name="new_tuit_content" rows="3" placeholder="What's happening?" style="margin-bottom: 5px"></textarea>
+<div class="wd-flex-column wd-width-30">
+    <textarea class="wd-margin-bottom-5px"
+              name="new_tuit_content"
+              rows="3"
+              placeholder="What's happening?">
+    </textarea>
     <select id="tuit_visibility">
         <option selected value="EVERYONE">Everyone can reply</option>
         <option value="FOLLOWING">People you follow</option>
