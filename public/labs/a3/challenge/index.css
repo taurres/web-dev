@@ -271,7 +271,7 @@
 
 
 @media (min-width: 0px) and (max-width: 600px) {
-    div .media-query2 {
+    p.media-query2, div.media-query2 {
         border: 5px solid #ff7070;
     }
     .media-query2 {
@@ -281,8 +281,8 @@
     }
 }
 @media (min-width: 600px) and (max-width: 1200px) {
-    div .media-query2 {
-        border: 5px dashed #ff7070;
+    p.media-query2, div.media-query2 {
+        border: 2px dashed #ff7070;
     }
     .media-query2 {
         background-color: rgba(159, 159, 88, 0.98);
@@ -290,8 +290,8 @@
     }
 }
 @media (min-width: 1200px) and (max-width: 1800px) {
-    div .media-query2 {
-        border: 10px dotted #ffffff;
+    p.media-query2, div.media-query2 {
+        border: 2px dotted #ffffff;
     }
     .media-query2 {
         background-color: #349c9f;
