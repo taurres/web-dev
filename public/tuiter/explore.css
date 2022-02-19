@@ -1,3 +1,58 @@
+/*bootstrap*/
+.border {
+    border: 1px solid #6a7178 !important;
+
+}
+
+.list-group-item{
+    background-color: black;
+    color: #6a7178;
+}
+.list-group-item.active{
+    background-color: black;
+    border-color: black;
+    font-weight: bold;
+}
+
+.wd-follow-panel .list-group-item{
+    background-color: #141617;
+}
+
+.btn-primary {
+    background-color: #2198e3;
+    border-color: #2198e3;
+}
+
+.nav-tabs {
+    border-bottom: 1px;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: black black black;
+    isolation: isolate;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: white;
+    background-color: black;
+    border-color: black black;
+    border-bottom: solid 3px #2198e3;
+}
+
+.nav-link {
+    color: #6a7178;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: white;
+}
+
+.list-group-item.btn {
+    color: black;
+    background-color: white;
+}
+
 /*fontawesome*/
 .fa-stack {
     height: 1.5em;
@@ -5,9 +60,11 @@
     width: 1em;
 }
 
-.wd-follow-panel .btn{
-    color: white
+body {
+    background-color: black;
 }
+
+
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
@@ -28,8 +85,10 @@ img.wd-rounded-corners-all-around {
     padding-left: 40px;
     padding-right: 20px;
     margin-right: 12px;
-    border: solid 1px #6a7178;
+    border: 1px #6a7178;
+    color: white;
     font-family: "Arial", sans-serif;
+    background-color: #222429;
 }
 .wd-search-panel-input::placeholder {
     color: #6a7178;
@@ -40,6 +99,11 @@ img.wd-rounded-corners-all-around {
     position: absolute;
     padding-left: 15px;
     padding-top: 2px;
+}
+
+.wd-follow-btn {
+    color: black;
+    background-color: white;
 }
 
 .wd-option-button {
@@ -65,7 +129,7 @@ h3.wd-bookmark-title, p.wd-bookmark-title {
 }
 
 .wd-gear-icon a:hover, .wd-gear-icon a:visited, .wd-gear-icon a:link, .wd-gear-icon a:active  {
-    color: #2198e3;
+    color: white;
     text-decoration: none;
 }
 
