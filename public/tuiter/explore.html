@@ -2,132 +2,266 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Explore</title>
-    <link href="explore.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c3e01404c4.js" crossorigin="anonymous"></script>
+    <link href="explore.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="wd-width-fixed wd-border-1px wd-padding-left-16px">
-    <!--search panel-->
-    <div class="wd-search-panel wd-width-fixed wd-height-40px ">
-        <span class="wd-search-icon wd-font-grey">
-            <i class="fas fa-search "></i>
-        </span>
-        <input class="wd-search-panel-input wd-rounded-corners-all-around wd-background-grey wd-font-grey"
-               type="text"
-               placeholder="Search Tuiter">
-        <span class="wd-gear-icon wd-font-blue wd-font-size-20px wd-padding-right-16px">
-            <a href="explore-settings.html"><i class="fas fa-cog"></i></a>
-        </span>
-    </div>
-    <!--navigation panel-->
-    <div class="wd-display-flex wd-width-fixed">
-        <span class="wd-navigation-panel-span wd-padding-16px wd-font-size-15px wd-font-family-arial">
-            <a class="wd-navigation-panel-active" href="#">For you</a>
-        </span>
-        <a class="wd-navigation-panel-inactive wd-padding-16px wd-font-size-15px wd-font-family-arial" href="#">Trending</a>
-        <a class="wd-navigation-panel-inactive wd-padding-16px wd-font-size-15px wd-font-family-arial" href="#">COVID-19</a>
-        <a class="wd-navigation-panel-inactive wd-padding-16px wd-font-size-15px wd-font-family-arial" href="#">News</a>
-        <a class="wd-navigation-panel-inactive wd-padding-16px wd-font-size-15px wd-font-family-arial" href="#">Sports</a>
-        <a class="wd-navigation-panel-inactive wd-padding-16px wd-font-size-15px wd-font-family-arial" href="#">Entertainment</a>
-    </div>
-</div>
-<div class="wd-width-fixed-616px wd-border-1px">
-    <!--divided line-->
-    <div class="wd-height-10px wd-background-grey"></div>
-</div>
-<div class="wd-width-fixed-616px ">
-    <!--suggested posts-->
-    <div class="wd-width-fixed-616px wd-border-1px">
-        <!--text post-->
-        <div class="wd-display-flex wd-padding-16px wd-border-1px">
-            <div class="wd-width-95percent">
-            <p class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial"><a>Trending in Science</a></p>
-            <p class="wd-title wd-font-white wd-font-size-20px wd-font-family-arial"><a>Startship</a></p>
-            <span class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial">55.5k Tuits</span>
-            </div>
-            <div>
-                <a href="#" class="wd-title wd-font-grey wd-font-size-15px">...</a>
-            </div>
-        </div>
-        <!--text post-->
-        <div class="wd-display-flex wd-padding-12px wd-border-1px">
-            <div class="wd-width-95percent">
-                <p class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial"><a>Sports•Trending</a></p>
-                <p class="wd-title wd-font-white wd-font-size-20px wd-font-family-arial"><a>Joe Rogan</a></p>
-                <span class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial">5218 Tuits</span>
-            </div>
-            <div>
-                <a href="#" class="wd-title wd-font-grey wd-font-size-15px">...</a>
+<div class="container mt-2">
+    <div class="row">
+        <!--navigation panel on the left-->
+        <div class="col-2 col-md-2 col-lg-1 col-xl-2">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <span class="me-1"><i class="fa-brands fa-twitter"></i></span>
+                </a>
+                <a href="#" class="d-flex list-group-item list-group-item-action">
+                    <span class="me-1"><i class="fas fa-solid fa-house-chimney"></i></span>
+                    <span class="d-none d-xl-block">Home</span>
+                </a>
+                <a href="#" class="d-flex list-group-item list-group-item-action active" aria-current="true">
+                    <span class="me-1"><i class="fa-solid fa-hashtag"></i></span>
+                    <span class="d-none d-xl-block">Explore</span>
+                </a>
+                <a href="#" class="d-flex list-group-item list-group-item-action">
+                    <span class="me-1"><i class="fa-solid fa-bell"></i></span>
+                    <span class="d-none d-xl-block">Notifications</span>
+                </a>
+                <a href="#" class="d-flex list-group-item list-group-item-action">
+                    <span class="me-1"><i class="fa-solid fa-envelope"></i></span>
+                    <span class="d-none d-xl-block">Messages</span>
+                </a>
+                <a href="#" class="d-flex list-group-item list-group-item-action">
+                    <span class="me-1"><i class="fa-solid fa-bookmark"></i></span>
+                    <span class="d-none d-xl-block">Boodmarks</span>
+                </a>
+                <a href="#" class="d-flex list-group-item list-group-item-action">
+                    <span class="me-1"><i class="fa-solid fa-list"></i></span>
+                    <span class="d-flex d-none d-xl-block">Lists</span>
+                </a>
+                <a href="#" class="d-flex  list-group-item list-group-item-action">
+                    <span class="me-1"><i class="fa-solid fa-user"></i></span>
+                    <span class="d-none d-xl-block">Profile</span>
+                </a>
+                <a href="#" class="d-flex list-group-item list-group-item-action">
+                    <span class="me-1 fa-stack">
+                        <i class="fa-solid fa-circle fa-stack-1x"></i>
+                        <i class="fa-solid fa-ellipsis fa-stack-1x text-white"></i>
+                    </span>
+                    <span class="d-none d-xl-block">More</span>
+                </a>
+                <a class="btn btn-primary mt-2 rounded-pill" href="#" role="button">
+                    <span class="d-block d-xl-none wd-font-size-12px">Tweet</span>
+                    <span class="d-none d-xl-block">Tweet</span>
+                </a>
             </div>
         </div>
-        <!--picture post with author-->
-        <div class="wd-display-flex wd-padding-12px wd-border-1px">
-            <div class="wd-width-95percent">
-                <img class="wd-float-left wd-padding-5px"
-                     src="https://static01.nyt.com/vi-assets/images/share/1200x1200_t.png"
-                     width="15px" height="15px">
-                <p class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial">
-                    <span class="wd-font-white">The New York Times&nbsp;<i class="fas fa-check-circle"></i></span>
-                    &nbsp;•&nbsp;Yersterday</p>
-                <p class="wd-title wd-font-white wd-font-size-20px wd-font-family-arial"><a>CNN's Cuomo conundrum: A start anchor with a brother in trouble</a></p>
+        <div class="col-10 col-md-10 col-lg-7 col-xl-6">
+            <!--main content at the middle-->
+            <div class="border-1">
+                <!--search panel-->
+                <div class="wd-search-panel">
+                    <span class="wd-search-icon wd-font-grey">
+                        <i class="fas fa-search "></i>
+                    </span>
+                    <input class="wd-search-panel-input wd-rounded-corners-all-around wd-font-grey"
+                           type="text"
+                           placeholder="Search Tuiter">
+                    <span class="wd-gear-icon wd-font-blue wd-font-size-20px">
+                        <a href="#"><i class="fas fa-cog"></i></a>
+                    </span>
+                </div>
+                <!--navigation panel-->
+                <div class="nav nav-tabs mb-2">
+                    <div class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">For you</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </div>
+                    <div class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="wd-padding-right-16px">
-                <img class="wd-rounded-corners-all-around"
-                     src="https://static01.nyt.com/images/2020/04/06/business/04chris-cuomo/0405JPBENSMITH-print-superJumbo-v2.jpg"
-                     width="100px" height="100px"/>
+            <!--showcase picture-->
+            <div class="row position-relative">
+                <img class="img-fluid" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1" />
+                <div class="wd-picture-title fs-2 text-light">SpaceX's Starship</div>
+            </div>
+
+            <!--suggested posts-->
+            <!--picture post with author-->
+            <div class="row m-0 border ps-2 pe-2 pt-2 pb-2 ">
+                <div class="col-8 col-sm-8 col-lg-9">
+                    <p class="wd-title wd-font-grey wd-font-size-15px wd-font-family-arial">
+                        Web Development</p>
+                    <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                        <span class="">ReactJS&nbsp;<i class="fas fa-check-circle"></i></span>
+                        &nbsp;-&nbsp;2h</p>
+                    <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                        <a>
+                        React.js is a component based front end library that makes it very easy to build single Page applications or SPAs
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
+                    <img class="wd-rounded-corners-all-around"
+                         src="https://cdn.icon-icons.com/icons2/2389/PNG/512/react_logo_icon_144942.png"
+                         width="100px" height="100px"/>
+                </div>
+            </div>
+            <!--picture post with author-->
+            <div class="row m-0 border ps-2 pe-2 pt-2 pb-2 ">
+                <div class="col-8 col-sm-8 col-lg-9">
+                    <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                        <span class="">JavaScript&nbsp;<i class="fas fa-check-circle"></i></span>
+                        &nbsp;-&nbsp;2h</p>
+                    <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                        <a>
+                            JavaScript is programming language that can run on browsers as well as desktops
+                        </a>
+                    </p>
+                    <p class="wd-title wd-font-grey wd-font-size-15px wd-font-family-arial">
+                        123k Tweets</p>
+                </div>
+                <div class="col-4 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
+                    <img class="wd-rounded-corners-all-around"
+                         src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+                         width="100px" height="100px"/>
+                </div>
+            </div>
+            <!--picture post with author-->
+            <div class="row m-0 border ps-2 pe-2 pt-2 pb-2 ">
+                <div class="col-8 col-sm-8 col-lg-9">
+                    <p class="wd-title wd-font-grey wd-font-size-15px wd-font-family-arial">
+                        Web Development</p>
+                    <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                        <span class="">ReactJS&nbsp;<i class="fas fa-check-circle"></i></span>
+                        &nbsp;-&nbsp;2h</p>
+                    <p class="wd-title wd-font-grey wd-font-size-15px wd-font-family-arial">
+                        123k Tweets</p>
+                </div>
+                <div class="col-4 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
+                    <img class="wd-rounded-corners-all-around"
+                         src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png"
+                         width="100px" height="100px"/>
+                </div>
+            </div>
+            <!--picture post with author-->
+            <div class="row m-0 border ps-2 pe-2 pt-2 pb-2 ">
+                <div class="col-8 col-sm-8 col-lg-9">
+                    <p class="wd-title wd-font-grey wd-font-size-15px wd-font-family-arial">
+                        Web Development</p>
+                    <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                        <span class="">NodeJS&nbsp;<i class="fas fa-check-circle"></i></span>
+                        &nbsp;-&nbsp;2h</p>
+                    <p class="wd-title wd-font-grey wd-font-size-15px wd-font-family-arial">
+                        123k Tweets</p>
+                </div>
+                <div class="col-4 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
+                    <img class="wd-rounded-corners-all-around"
+                         src="https://www.mbejda.com/content/images/2015/12/node.png"
+                         width="100px" height="100px"/>
+                </div>
             </div>
         </div>
-        <!--picture post-->
-        <div class="wd-display-flex wd-padding-12px wd-border-1px">
-            <div class="wd-width-95percent">
-                <p class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial">COVID-19&nbsp;•&nbsp;LIVE</p>
-                <p class="wd-title wd-font-white wd-font-size-20px wd-font-family-arial"><a>COVID-19: News and updates for Massachusetts</a></p>
-            </div>
-            <div class="wd-padding-right-16px">
-                <img class="wd-rounded-corners-all-around"
-                     src="https://www.massgeneral.org/assets/MGH/images/News/coronavirus/Coronavirus%20Image%20600x360%20optimized.jpg"
-                     width="100px" height="100px"/>
-            </div>
-        </div>
-        <!--picture post with author-->
-        <div class="wd-display-flex wd-padding-12px wd-border-1px">
-            <div class="wd-width-95percent">
-                <img class="wd-float-left wd-padding-5px"
-                     src="http://assets.stickpng.com/images/608ff6fc5d1f990004970e68.png"
-                     width="15px" height="15px">
-                <p class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial">
-                    <span class="wd-font-white">Bloomberg Opinion&nbsp;<i class="fas fa-check-circle"></i></span>
-                    &nbsp;•&nbsp;Yersterday</p>
-                <p class="wd-title wd-font-white wd-font-size-20px wd-font-family-arial"><a>Thinking about getting a booster? Read this first.</a></p>
-            </div>
-            <div class="wd-padding-right-16px">
-                <img class="wd-rounded-corners-all-around"
-                     src="http://content.health.harvard.edu/wp-content/uploads/2021/11/6916c010-400a-4c29-868a-1f1d8e644b65.jpg"
-                     width="100px" height="100px"/>
-            </div>
-        </div>
-        <!--text post-->
-        <div class="wd-display-flex wd-padding-12px wd-border-1px">
-            <div class="wd-width-95percent">
-                <p class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial"><a>Trending in United States</a></p>
-                <p class="wd-title wd-font-white wd-font-size-20px wd-font-family-arial"><a>Wonder Bread</a></p>
-                <span class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial">1259 Tuits</span>
-            </div>
-            <div>
-                <a href="#" class="wd-title wd-font-grey wd-font-size-15px">...</a>
-            </div>
-        </div>
-        <!--picture post-->
-        <div class="wd-display-flex wd-padding-12px wd-border-1px">
-            <div class="wd-width-95percent">
-                <p class="wd-title wd-font-grey wd-font-size-13px wd-font-family-arial">Weather&nbsp;•&nbsp;LIVE</p>
-                <p class="wd-title wd-font-white wd-font-size-20px wd-font-family-arial"><a>FIRST ALERT: Friday Storm Brings 1-2 Feet of Snow North</a></p>
-            </div>
-            <div class="wd-padding-right-16px">
-                <img class="wd-rounded-corners-all-around"
-                     src="data:image/jpeg;base64,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"
-                     width="100px" height="100px"/>
+        <div class="col-lg-4 col-xl-4 d-none d-lg-block">
+            <!--follow panel-->
+            <div class="list-group wd-follow-panel">
+                <div class="list-group-item d-flex justify-content-between align-items-center">
+                    <a class="fw-bold text-black" href="#">Who to follow</a>
+                </div>
+                <!--potential followees-->
+                <div class="list-group-item d-flex  align-items-center">
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <img class="wd-circle-icon"
+                             src="java_logo.png"
+                             width="50px" height="50px"/>
+                    </div>
+                    <div class="ms-2 col-7">
+                        <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                            <span class="">Java&nbsp;<i class="fas fa-check-circle"></i></span>
+                        </p>
+                        <p class="wd-title wd-font-black wd-font-size-15px wd-font-family-arial">
+                            @Java</p>
+                    </div>
+                    <a href="#" class="btn bg-primary rounded-pill ">Follow</a>
+                </div>
+
+                <div class="list-group-item d-flex  align-items-center">
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <img class="wd-circle-icon"
+                             src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
+                             width="50px" height="50px"/>
+                    </div>
+                    <div class="ms-2 col-7">
+                        <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                            <span class="">Relativity Space&nbsp;<i class="fas fa-check-circle"></i></span>
+                        </p>
+                        <p class="wd-title wd-font-black wd-font-size-15px wd-font-family-arial">
+                            @relativityspace</p>
+                    </div>
+                    <a href="#" class="btn bg-primary rounded-pill ">Follow</a>
+                </div>
+
+                <div class="list-group-item d-flex  align-items-center">
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <img class="wd-circle-icon"
+                             src="https://cdn.worldvectorlogo.com/logos/virgin-books-1.svg"
+                             width="50px" height="50px"/>
+                    </div>
+                    <div class="ms-2 col-7">
+                        <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                            <span class="">Virgin Galactic&nbsp;<i class="fas fa-check-circle"></i></span>
+                        </p>
+                        <p class="wd-title wd-font-black wd-font-size-15px wd-font-family-arial">
+                            @virgingalactice</p>
+                    </div>
+                    <a href="#" class="btn bg-primary rounded-pill ">Follow</a>
+                </div>
+
+                <div class="list-group-item d-flex  align-items-center">
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <img class="wd-circle-icon"
+                             src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg"
+                             width="50px" height="50px"/>
+                    </div>
+                    <div class="ms-2 col-7">
+                        <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                            <span class="">NASA&nbsp;<i class="fas fa-check-circle"></i></span>
+                        </p>
+                        <p class="wd-title wd-font-black wd-font-size-15px wd-font-family-arial">
+                            @NASA</p>
+                    </div>
+                    <a href="#" class="btn bg-primary rounded-pill ">Follow</a>
+                </div>
+
+                <div class="list-group-item d-flex  align-items-center">
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <img class="wd-circle-icon"
+                             src="https://www.clipartmax.com/png/full/39-396698_tesla-logo-%5Beps-motors%5D-tesla-logo-icon.png"
+                             width="50px" height="50px"/>
+                    </div>
+                    <div class="ms-2 col-7">
+                        <p class="wd-title wd-font-bold wd-font-size-15px wd-font-family-arial">
+                            <span class="">Tesla&nbsp;<i class="fas fa-check-circle"></i></span>
+                        </p>
+                        <p class="wd-title wd-font-black wd-font-size-15px wd-font-family-arial">
+                            @Tesla</p>
+                    </div>
+                    <a href="#" class="btn bg-primary rounded-pill ">Follow</a>
+                </div>
+
             </div>
         </div>
     </div>
