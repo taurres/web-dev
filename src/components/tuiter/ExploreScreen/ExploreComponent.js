@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PostSummaryList from '../PostSummaryList/index';
 
 const ExploreComponent = () => {
@@ -14,25 +15,25 @@ const ExploreComponent = () => {
                  type="text"
                  placeholder="Search Twitter"/>
           <span className="wd-gear-icon wd-font-blue wd-font-size-20px">
-                    <a href="#"><i className="fas fa-cog"></i></a>
+                    <Link to="#" href="#"><i className="fas fa-cog"></i></Link>
                 </span>
         </div>
         {/*navigation panel*/}
         <div className="nav nav-tabs mb-2 justify-content-between">
           <div className="nav-item">
-            <a className="nav-link active" aria-current="page" href="for-you.html">For you</a>
+            <Link to="#" className="nav-link active" aria-current="page">For you</Link>
           </div>
           <div className="nav-item">
-            <a className="nav-link" href="trending.html">Trending</a>
+            <Link to="#" className="nav-link">Trending</Link>
           </div>
           <div className="nav-item">
-            <a className="nav-link" href="news.html">News</a>
+            <Link to="#" className="nav-link">News</Link>
           </div>
           <div className="nav-item">
-            <a className="nav-link" href="sports.html">Sports</a>
+            <Link to="#" className="nav-link">Sports</Link>
           </div>
           <div className="nav-item d-none d-md-block">
-            <a className="nav-link" href="entertainment.html">Entertainment</a>
+            <Link to="#" className="nav-link">Entertainment</Link>
           </div>
         </div>
 
@@ -40,7 +41,9 @@ const ExploreComponent = () => {
       {/*showcase picture*/}
       <div className="position-relative mb-2">
         <img className="img-fluid"
-             src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"/>
+             src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"
+             alt="spacex"
+        />
         <div className="wd-picture-title fs-2 text-white">SpaceX's Starship</div>
       </div>
       <PostSummaryList/>

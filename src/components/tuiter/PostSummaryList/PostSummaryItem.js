@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PostSummaryItem = ({
                            post = {
@@ -18,14 +19,15 @@ const PostSummaryItem = ({
           <span className="">{post.userName}&nbsp;<i className="fas fa-check-circle"></i></span>
           <span className="wd-font-grey">&nbsp;-&nbsp;{post.time}</span></p>
         <p className="wd-title wd-font-white wd-font-bold wd-font-size-15px wd-font-family-arial">
-          <a>
+          <Link to="#">
             {post.title}
-          </a>
+          </Link>
         </p>
       </div>
       <div className="col-4 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
         <img className="wd-rounded-corners-all-around"
              src={post.image}
+             alt={post.userName}
              width="100px" height="100px"/>
       </div>
     </div>

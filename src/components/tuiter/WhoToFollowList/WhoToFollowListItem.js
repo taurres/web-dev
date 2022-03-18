@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const WhoToFollowListItem = ({
                                who = {
@@ -22,7 +23,7 @@ const WhoToFollowListItem = ({
         <p className="wd-title wd-font-black wd-font-size-15px wd-font-family-arial">
           @{who.handle}</p>
       </div>
-      <a href="#" className="btn wd-follow-btn rounded-pill ">Follow</a>
+      <Link to="#" className="btn wd-follow-btn rounded-pill ">Follow</Link>
     </div>
   );
 };
