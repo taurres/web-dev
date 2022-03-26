@@ -18,9 +18,7 @@ const PostSummaryItem = ({
           <span className="">{post.userName}&nbsp;<i className="fas fa-check-circle"></i></span>
           <span className="wd-font-grey">&nbsp;-&nbsp;{post.time}</span></p>
         <p className="wd-title wd-font-white wd-font-bold wd-font-size-15px wd-font-family-arial">
-          <p>
-            {post.title}
-          </p>
+          {post.title}
         </p>
       </div>
       <div className="col-4 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">

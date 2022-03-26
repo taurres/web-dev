@@ -1,24 +1,12 @@
 import React from 'react';
 
-const SummaryPicture = ({
-                          post = {
-                            'userName': 'New York Post',
-                            'handle': 'nypost',
-                            'icon': '/images/new_york_post_icon.png',
-                            'time': '23h',
-                            'content': 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk <a href="#">trib.al/nx2Gfaq</a>',
-                            'image': '/images/new_york_post_summary.jpeg',
-                            'comment_count': '965',
-                            'retweet_count': '2.4k',
-                            'like_count': '4k'
-                          }
-                        }) => {
+const SummaryPicture = ({post}) => {
   if (post.title === undefined) {
     return (
       // summary picture
       <div className="col-12">
         <div className="wd-border-1px wd-rounded-corners-all-around">
-          <img className="img-fluid wd-rounded-corners-all-around" src={post.image} alt={post.userName}/>
+          <img className="img-fluid wd-rounded-corners-all-around" src={post.image} alt={post.postedBy.username}/>
         </div>
       </div>
     );
@@ -28,7 +16,7 @@ const SummaryPicture = ({
         {/*summary picture*/}
         <div className="col-12">
           <div className="wd-border-1px wd-rounded-corners-top">
-            <img className="img-fluid wd-rounded-corners-top" src={post.image} alt={post.userName}/>
+            <img className="img-fluid wd-rounded-corners-top" src={post.image} alt={post.postedBy.username}/>
           </div>
         </div>
         {/*summary text*/}
