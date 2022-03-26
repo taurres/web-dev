@@ -74,7 +74,7 @@ const ProfileEditScreen = () => {
                  src={profile.profilePicture}
                  alt="profilePicture"
             />
-            <i className="fa-solid fa-camera wd-profile-edit-icon-update"></i>
+            <i className="btn fa-solid fa-camera wd-profile-edit-icon-update"></i>
           </div>
 
         </div>
