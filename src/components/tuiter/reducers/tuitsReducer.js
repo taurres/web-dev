@@ -1,48 +1,23 @@
-import tuits from '../data/tuits.json';
+import { FIND_ALL_TUITS, CREATE_TUIT, DELETE_TUIT, UPDATE_TUIT } from '../actions/tuitsActions';
 
-const tuitsReducer = (state = tuits, action) => {
+const tuitsReducer = (state = [], action) => {
   switch (action.type) {
-    case 'create-tuit':
-      const newTuit = {
-        tuit: action.tuit,
-        _id: (new Date()).getTime() + '',
-        logo_image: '/images/elon_musk_icon.jpeg',
-        postedBy: {
-          'username': 'Elon Musk'
-        },
-        stats: {
-          comments: 0,
-          retuits: 111,
-          likes: 222,
-          replies: 333
-        }
-      };
+    case CREATE_TUIT:
       return [
-        newTuit,
+        action.newTuit,
         ...state,
       ];
-    case 'delete-tuit':
+    case FIND_ALL_TUITS:
+      return action.tuits;
+    case UPDATE_TUIT:
+      return state.map(
+        tuit => tuit._id === action.tuit._id ?
+          action.tuit : tuit);
+    case DELETE_TUIT:
       return state.filter(
         tuit => tuit._id !== action.tuit._id);
-    case 'like-tuit':
-      return state.map(tuit => {
-        if (tuit._id === action.tuit._id) {
-          if (tuit.liked === true) {
-            tuit.liked = false;
-            tuit.stats.likes--;
-          } else {
-            tuit.liked = true;
-            tuit.stats.likes++;
-          }
-          return tuit;
-        } else {
-          return tuit;
-        }
-      });
-
-
     default:
-      return tuits;
+      return state;
   }
 };
 
